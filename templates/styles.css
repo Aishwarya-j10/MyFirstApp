@@ -1,0 +1,28 @@
+/* Example styling for the Home Page */
+.profile-photo {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.intro {
+    text-align: center;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}

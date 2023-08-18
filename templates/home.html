@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Home-Personal Portfolio
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to my PortFolio</h1>
+        </header> 
+        <section class="section">
+                <div class="intro">
+                    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Photo" class="profile-photo">
+                    <p>Hello, I'm John Doe. I'm a passionate web developer with a love for coding and creating interactive web experiences. Welcome to my portfolio!</p>
+                </div>
+            
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                        <li><a href="{{ url_for('project') }}">Projects</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    </ul>
+                </nav>
+        </section>
+    </div>    
+    <p>Check out my Projects and skills</p>
+</body>
+</html>
