@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        ABOUT - Personal Portfolio
-    </title>
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Information about ME!</h1>
-    <p>Check out my Projects and skills</p>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/skills">Skills</a></li>
+              <li><a href="/project">Projects</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div class="about-card">
+            <div class="about-thumbnail">
+                <img src="{{ url_for('static', filename='profile_photo.jpg') }}" alt="Profile Photo">
+            </div>
+            <div class="about-details">
+                <h2>About Me</h2>
+                <p>Hello! I'm Aishwarya, a graduate with a Bachelors Degree Engineering in Computer Science. 
+                   I am excited to begin my career in data analytics.
+                </p>
+                <p>I hold a Bachelor's Degree in Computer Science and have experience working on a variety of web projects.</p>
+                <p>My goal is to create elegant and user-friendly web applications that provide value to users.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        PROJECTS - Personal Portfolio
-    </title>
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to my Projects</h1>
-    <p>Check out my Contact and skills</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/skills">Skills</a></li>
+                  <li><a href="/project">Projects</a></li>
+                  <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <div class="project-thumbnail">
+                <img src="{{ url_for('static', filename='project1_thumbnail.jpg') }}" alt="Project 1">
+            </div>
+            <div class="project-details">
+                <h3>Project 1</h3>
+                <p>A web application for managing tasks and to-do lists.</p>
+                <p>Technologies: Python, Flask, HTML, CSS</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <div class="project">
+            <div class="project-thumbnail">
+                <img src="{{ url_for('static', filename='project2_thumbnail.jpg') }}" alt="Project 2">
+            </div>
+            <div class="project-details">
+                <h3>Project 2</h3>
+                <p>An e-commerce website for selling handmade crafts.</p>
+                <p>Technologies: Python, Django, JavaScript, Bootstrap</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Add more project details as needed -->
+    </section>
 </body>
 </html>

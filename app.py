@@ -23,6 +23,7 @@ def contact():
     if request.method == 'POST' : 
         name = request.form['name']
         email = request.form['email'] 
+        subject = request.form['subject']
         message = request.form['message'] 
 
         print(f'Name: {name}, Email:{email}, Message: {message}') 
